@@ -28,6 +28,9 @@ const id = 100;
 //     console.log('INCORRECT');
 // }
 
-if(id){
+//test if undefined
+if(typeof id !== 'undefined'){
     console.log(`The ID is ${id}`);
+}else {
+    console.log('NO ID');
 }
