@@ -70,32 +70,58 @@ console.log(yearsUntilRetirement(1980, 'Bob')); */
 
 //Functions calling other functions
 
-const jonas = {
+/* const jonas = {
     firstName: 'Jonas',
     lastName: 'Kuf',
-    age: 2037 - 1991,
+    birthYear: 1991,
     job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
-};
-console.log(jonas);
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: false, */
 
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+    /* calcAge: function (birthYear) {
+        return 2037 - birthYear;
+    } */
 
-const nameKey = 'Name';
+   /*  calcAge: function () {
+        //console.log(this);
+        return 2037 - this.birthYear;
+    }  */
+/* 
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
+
+}; */
+
+/* const nameKey = 'Name';
 console.log(jonas['first' + nameKey])
 console.log(jonas['last' + nameKey])
 
 const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName.....')
 
-if (jonas[interestedIn]) {
+ if (jonas[interestedIn]) {
     console.log(jonas[interestedIn]);
 } else {
     console.log('Wrong request, Choose between .......')
-} 
+}  
+ */
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@kuf';
+// //console.log(jonas); 
 
-jonas.location = 'Portugal';
-jonas['twitter'] = '@kuf';
-console.log(jonas); 
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+//functions as object properties
+
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+
+// Challenge
+//"Jonas is a 46-year old teacher, and he has a/no driver's license"
+// console.log(jonas.getSummary());
+    
