@@ -92,4 +92,8 @@ if (jonas[interestedIn]) {
     console.log(jonas[interestedIn]);
 } else {
     console.log('Wrong request, Choose between .......')
-}
+} 
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@kuf';
+console.log(jonas); 
