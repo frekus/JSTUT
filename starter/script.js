@@ -97,3 +97,5 @@ if (jonas[interestedIn]) {
 jonas.location = 'Portugal';
 jonas['twitter'] = '@kuf';
 console.log(jonas); 
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
