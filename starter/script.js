@@ -1,4 +1,3 @@
-
 /* const age = 17;
 const isOldEnough = age >= 18;
 
@@ -19,7 +18,7 @@ if(favourite === 23) {
 }else{
     console.log('Number is not 23 or 7')
 } */
-'use strict';
+"use strict";
 //FUNCTIONS
 
 /* function logger(){
@@ -78,11 +77,11 @@ console.log(yearsUntilRetirement(1980, 'Bob')); */
     friends: ['Michael', 'Peter', 'Steven'],
     hasDriversLicense: false, */
 
-    /* calcAge: function (birthYear) {
+/* calcAge: function (birthYear) {
         return 2037 - birthYear;
     } */
 
-   /*  calcAge: function () {
+/*  calcAge: function () {
         //console.log(this);
         return 2037 - this.birthYear;
     }  */
@@ -112,7 +111,7 @@ const interestedIn = prompt('What do you want to know about Jonas? Choose betwee
  */
 // jonas.location = 'Portugal';
 // jonas['twitter'] = '@kuf';
-// //console.log(jonas); 
+// //console.log(jonas);
 
 // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
@@ -131,12 +130,12 @@ const interestedIn = prompt('What do you want to know about Jonas? Choose betwee
 } */
 
 const jonas = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven'],
-    true
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 
 /* for(let i = 0; i < jonas.length; i++) {
@@ -188,11 +187,53 @@ while (rep <= 10) {
     rep++;
 } */
 
- let dice = Math.trunc(Math.random() * 6) + 1;
+/* let dice = Math.trunc(Math.random() * 6) + 1;
 // console.log(dice);
 
 while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log("Loop is about to end...");
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end...");
 }
+
+console.log(); */
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+/* 
+const calcTempAmplitude = function (temps) {
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        const curTemp = temps[i];
+        if (typeof curTemp !== 'number') continue;
+
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
+    }
+    console.log(max, min);
+    return max - min;
+};
+// calcTempAmplitude([3, 7, 4, 8, 1]);
+// calcTempAmplitude(temperatures)
+
+const amplitude = calcTempAmplitude(temperatures);
+console.log(amplitude); */
+
+const measureKelvin = function () {
+    const measurement = {
+        type: 'temp',
+        unit: 'celsius',
+        value: prompt('Degrees celsius'),
+    };
+
+    //console.log(measurement.value);
+    console.warn('10');
+    console.error('10');
+    console.table(measurement);
+
+    const kelvin = Number(measurement.value) + 273;
+    return kelvin;
+    
+};
+console.log(measureKelvin());
