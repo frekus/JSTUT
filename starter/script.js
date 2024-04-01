@@ -180,6 +180,8 @@ for (let rep = 1; rep < 6; rep++) {
     }
 } */
 
+//while loop is best when you don't know the number of times is loop is required to run.
+//Conversely, For loops are used when the number of loops are known, e.g in arrays
 /* let rep = 1;
 while (rep <= 10) {
     console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
